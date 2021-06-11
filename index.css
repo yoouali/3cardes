@@ -1,0 +1,25 @@
+body{
+    background-color: #FBFCFC;
+    width: 100%;
+    margin: 0;
+}
+
+h1{
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+.projectcontainer{
+    display:flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color:#EAFAF1;
+    margin: auto;
+}
+.projectcard{
+    background-color: #AEB6BF;
+    height: 250px;
+    width: 200px;
+    text-align: center;
+    padding: 0;
+    margin: 8px;
+}
