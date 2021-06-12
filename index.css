@@ -1,5 +1,6 @@
 body{
-    background-color: #FBFCFC;
+    background-color: #ABEBC6;
+    background-color: #2ECC71;
     width: 100%;
     margin: 0;
 }
@@ -22,4 +23,41 @@ h1{
     text-align: center;
     padding: 0;
     margin: 8px;
+}
+
+.child{
+    background-color: #2ECC71;
+    width: 80%;
+    height: 40vh;
+    margin: auto;
+    border-radius: 10px;
+}
+  
+.outer {
+    animation: unhide_outer 5s ease-out 1;
+    animation-fill-mode: forwards;
+  }
+  
+@keyframes unhide_outer {
+    0% {
+      box-shadow:  0 0 0 #2ECC71,
+               0 0 0 #2ECC71,
+               0 0 0 #2ECC71,
+               0 0 0 #2ECC71;
+      border: 0px solid #27AE60;
+    }
+    20% {
+      box-shadow:  0 0 0 #2ECC71,
+      0 0 0 #2ECC71,
+      0 0 0 #2ECC71,
+      0 0 0 #2ECC71;
+      border: 0px solid #27AE60;
+    }
+    100%{
+      box-shadow:  30px 30px 50px #2ECC71,
+               -30px -30px 50px #186A3B,
+               30px 30px 50px #2ECC71,
+               -30px -30px 50px #186A3B;
+      border: 1px solid #27AE60;
+    }
 }
