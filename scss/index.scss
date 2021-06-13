@@ -1,0 +1,197 @@
+:root {
+  --color-theme: #ffad00;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #7f8c8d;
+  background-color: #ecf0f3;
+  width: 100%;
+  margin: 0;
+}
+
+h1 {
+  text-align: center;
+  font-family: "Courier New", Courier, monospace;
+}
+// .projectcontainer {
+//   display: flex;
+//   justify-content: space-around;
+//   flex-wrap: wrap;
+//   background-color: #eafaf1;
+//   margin: auto;
+// }
+// .projectcard {
+//   background-color: #aeb6bf;
+//   height: 250px;
+//   width: 200px;
+//   text-align: center;
+//   padding: 0;
+//   margin: 8px;
+// }
+
+// .child {
+//   background-color: #2ecc71;
+//   width: 80%;
+//   height: 40vh;
+//   margin: auto;
+//   border-radius: 10px;
+// }
+
+// .outer {
+//   animation: unhide_outer 5s ease-out 1;
+//   animation-fill-mode: forwards;
+// }
+
+// @keyframes unhide_outer {
+//   0% {
+//     box-shadow: 0 0 0 #2ecc71, 0 0 0 #2ecc71, 0 0 0 #2ecc71, 0 0 0 #2ecc71;
+//     border: 0px solid #27ae60;
+//   }
+//   20% {
+//     box-shadow: 0 0 0 #2ecc71, 0 0 0 #2ecc71, 0 0 0 #2ecc71, 0 0 0 #2ecc71;
+//     border: 0px solid #27ae60;
+//   }
+//   100% {
+//     box-shadow: 30px 30px 50px #2ecc71, -30px -30px 50px #186a3b,
+//       30px 30px 50px #2ecc71, -30px -30px 50px #186a3b;
+//     border: 1px solid #27ae60;
+//   }
+// }
+
+// .neumorphism {
+//   width: 80%;
+//   height: 70vh;
+//   margin: auto;
+//   background-color: #abebc6;
+//   border-radius: 10px;
+//   box-shadow: inset -5px -5px 50px #ffffff73, inset 5px 5px 20px #186a3b;
+// }
+/* 
+  .card{
+    background-color: #2ECC71;
+    width: 200px;
+    height: 300px;
+    margin-left: 10vw;
+    box-shadow: -1px -1px 5px #ffffff73, 1px 1px 5px #00000040;
+    border: 0.05px solid #2ECC71;
+    transform: rotate(-1deg) skew(1deg) scale(1);
+    transition:cubic-bezier(1, 0, 0, 1);
+  } */
+.card {
+  width: 80%;
+  height: 60vh;
+  margin: auto;
+  background-color: #ecf0f3;
+  box-shadow: 10px 10px 10px #d1d9e6, -10px -10px 10px #f9f9f9;
+  border-radius: 12px;
+}
+
+.container {
+  //   background: red;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  //   h1 {
+  //     justify-self: flex-start;
+  //     // align-self: ;
+  //   }
+
+  .rings {
+    background-color: red;
+    position: relative;
+
+    .ring {
+      border-radius: 300px;
+      border: 13px solid white;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      box-shadow: inset 10px 10px 10px rgba($color: #000000, $alpha: 0.1),
+        10px 10px 10px rgba($color: #000000, $alpha: 0.1),
+        -3px -3px 10px rgba($color: #ffffff, $alpha: 0.8),
+        inset -3px -3px 10px rgba($color: #ffffff, $alpha: 0.9);
+      //   transition-duration: 0.5s;
+      //   background: $color-theme;
+
+      &1 {
+        width: 300px - (70px * 0);
+        height: 300px - (70px * 0);
+        animation: backywacky 0.5s ease 2s forwards;
+      }
+      &2 {
+        width: 300px - (70px * 1);
+        height: 300px - (70px * 1);
+        animation: backywacky 0.5s ease 1.5s forwards;
+      }
+      &3 {
+        width: 300px - (70px * 2);
+        height: 300px - (70px * 2);
+        animation: backywacky 0.5s ease 1s forwards;
+      }
+      &4 {
+        width: 300px - (70px * 3);
+        height: 300px - (70px * 3);
+        animation: backywacky 0.5s ease 0.5s forwards;
+      }
+      &5 {
+        width: 300px - (70px * 4);
+        height: 300px - (70px * 4);
+        animation: backywacky 0.5s ease 0s forwards;
+      }
+    }
+  }
+}
+
+@keyframes backywacky {
+  to {
+    background: var(--color-theme);
+  }
+}
+.choose-theme {
+  margin-top: 5rem;
+  display: flex;
+  column-gap: 10px;
+  margin-top: 200px;
+}
+
+.theme {
+  width: 3rem;
+  height: 3rem;
+  cursor: pointer;
+  border: 5px solid #ececec;
+  box-shadow: -10px -10px 15px rgba(255, 255, 255, 0.3),
+    10px 10px 15px rgba(70, 70, 70, 0.15),
+    inset -10px -10px 15px rgba(255, 255, 255, 0.3),
+    inset 10px 10px 15px rgba(70, 70, 70, 0.15);
+  border-radius: 50%;
+}
+.theme1 {
+  background-color: #ffad00;
+}
+.theme2 {
+  background-color: #01c5c4;
+}
+.theme3 {
+  background-color: #ffa5a5;
+}
+.theme4 {
+  background-color: #d789d7;
+}
+.theme5 {
+  background-color: #f09ae9;
+}
+.theme6 {
+  background-color: #e7305b;
+}
+.theme7 {
+  background-color: #303960;
+}

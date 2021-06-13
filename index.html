@@ -5,10 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link href="index.css" rel="stylesheet">
+    <link href="./css/index.css" rel="stylesheet">
 </head>
 <body>
     <h1> PROJECTS </h1>
+    <div class="container">
     <!-- <div class="projectcontainer">
         <div class="projectcard">
         </div>
@@ -22,9 +23,37 @@
         </div>
     </div> -->
     <!-- <div class="child outer"> -->
-    <div class="card">
+    <!-- <div class="card">
+        
+    </div> -->
+    <div class="rings">
+        <div class="ring ring1">
+            <div class="ring ring2">
+                <div class="ring ring3">
+                    <div class="ring ring4">
+                    <div class="ring ring5"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
         
     </div>
-    </div>
+    <script>
+
+const root = document.documentElement;
+const chooseTheme = (color) => {
+  root.style.setProperty('--color-theme', color);
+};
+
+    </script>
+    <div class="choose-theme">
+        <div class="theme theme1" onclick="chooseTheme('#ffad00')"></div>
+        <div class="theme theme2" onclick="chooseTheme('#01c5c4')"></div>
+        <div class="theme theme3" onclick="chooseTheme('#ffa5a5')"></div>
+        <div class="theme theme4" onclick="chooseTheme('#d789d7')"></div>
+        <div class="theme theme5" onclick="chooseTheme('#f09ae9')"></div>
+        <div class="theme theme6" onclick="chooseTheme('#e7305b')"></div>
+        <div class="theme theme7" onclick="chooseTheme('#303960')"></div>
+      </div>
     </body>
 </html>
