@@ -104,145 +104,6 @@ h1 {
   //     // align-self: ;
   //   }
 
-  //   .rings {
-  //     background-color: red;
-  //     position: relative;
-
-  //     .ring {
-  //       border-radius: 300px;
-  //       border: 13px solid white;
-  //       position: absolute;
-  //       top: 50%;
-  //       left: 50%;
-  //       transform: translate(-50%, -50%);
-  //       box-shadow: inset 10px 10px 10px rgba($color: #000000, $alpha: 0.1),
-  //         10px 10px 10px rgba($color: #000000, $alpha: 0.1),
-  //         -3px -3px 10px rgba($color: #ffffff, $alpha: 0.8),
-  //         inset -3px -3px 10px rgba($color: #ffffff, $alpha: 0.9);
-  //       //   transition-duration: 0.5s;
-  //       //   background: $color-theme;
-
-  //       &1 {
-  //         width: 300px - (70px * 0);
-  //         height: 300px - (70px * 0);
-  //         animation: backywacky1 0.5s ease infinite;
-  //       }
-  //       &2 {
-  //         width: 300px - (70px * 1);
-  //         height: 300px - (70px * 1);
-  //         animation: backywacky2 0.5s ease infinite;
-  //       }
-  //       &3 {
-  //         width: 300px - (70px * 2);
-  //         height: 300px - (70px * 2);
-  //         animation: backywacky3 0.5s ease infinite;
-  //       }
-  //       &4 {
-  //         width: 300px - (70px * 3);
-  //         height: 300px - (70px * 3);
-  //         animation: backywacky4 0.5s ease infinite;
-  //       }
-  //       &5 {
-  //         width: 300px - (70px * 4);
-  //         height: 300px - (70px * 4);
-  //         animation: backywacky5 0.5s ease infinite;
-  //       }
-  //     }
-  //   }
-  // }
-
-  // @keyframes backywacky1 {
-  //   0% {
-  //     background: white;
-  //   }
-  //   20% {
-  //     background: var(--color-theme);
-  //   }
-  // }
-  // @keyframes backywacky2 {
-  //   0% {
-  //     background: white;
-  //   }
-  //   20% {
-  //     background: white;
-  //   }
-  //   40% {
-  //     background: var(--color-theme);
-  //   }
-  // }
-  // @keyframes backywacky3 {
-  //   0% {
-  //     background: white;
-  //   }
-  //   40% {
-  //     background: white;
-  //   }
-  //   60% {
-  //     background: var(--color-theme);
-  //   }
-  // }
-  // @keyframes backywacky4 {
-  //   0% {
-  //     background: white;
-  //   }
-  //   60% {
-  //     background: white;
-  //   }
-  //   80% {
-  //     background: var(--color-theme);
-  //   }
-  // }
-  // @keyframes backywacky5 {
-  //   0% {
-  //     background: white;
-  //   }
-  //   80% {
-  //     background: white;
-  //   }
-  //   100% {
-  //     background: var(--color-theme);
-  //   }
-  // }
-  .choose-theme {
-    margin-top: 5rem;
-    display: flex;
-    column-gap: 10px;
-    margin-top: 200px;
-  }
-
-  .theme {
-    width: 3rem;
-    height: 3rem;
-    cursor: pointer;
-    border: 5px solid #ececec;
-    box-shadow: -10px -10px 15px rgba(255, 255, 255, 0.3),
-      10px 10px 15px rgba(70, 70, 70, 0.15),
-      inset -10px -10px 15px rgba(255, 255, 255, 0.3),
-      inset 10px 10px 15px rgba(70, 70, 70, 0.15);
-    border-radius: 50%;
-  }
-  .theme1 {
-    background-color: #ffad00;
-  }
-  .theme2 {
-    background-color: #01c5c4;
-  }
-  .theme3 {
-    background-color: #ffa5a5;
-  }
-  .theme4 {
-    background-color: #d789d7;
-  }
-  .theme5 {
-    background-color: #f09ae9;
-  }
-  .theme6 {
-    background-color: #e7305b;
-  }
-  .theme7 {
-    background-color: #303960;
-  }
-
   .rings {
     background-color: red;
     position: relative;
@@ -264,29 +125,31 @@ h1 {
       &1 {
         width: 300px - (70px * 0);
         height: 300px - (70px * 0);
-        align-self: flex-start;
-        animation: backywacky5 2s ease infinite;
+        animation: backywacky5 0.5s ease infinite;
       }
       &2 {
         width: 300px - (70px * 1);
         height: 300px - (70px * 1);
-        left: 50%;
-        animation: backywacky4 2s ease infinite;
+        margin-left: (300px - (70px)) / 7;
+        animation: backywacky4 0.5s ease infinite;
       }
       &3 {
         width: 300px - (70px * 2);
         height: 300px - (70px * 2);
-        animation: backywacky3 2s ease infinite;
+        margin-left: (300px - (70px)) / 7;
+        animation: backywacky3 0.5s ease infinite;
       }
       &4 {
         width: 300px - (70px * 3);
         height: 300px - (70px * 3);
-        animation: backywacky2 2s ease infinite;
+        margin-left: (300px - (70px)) / 7;
+        animation: backywacky2 0.5s ease infinite;
       }
       &5 {
         width: 300px - (70px * 4);
         height: 300px - (70px * 4);
-        animation: backywacky1 2s ease infinite;
+        margin-left: (300px - (70px)) / 7;
+        animation: backywacky1 0.5s ease infinite;
       }
     }
   }
@@ -344,3 +207,142 @@ h1 {
     background: var(--color-theme);
   }
 }
+.choose-theme {
+  margin-top: 5rem;
+  display: flex;
+  column-gap: 10px;
+  margin-top: 200px;
+}
+
+.theme {
+  width: 3rem;
+  height: 3rem;
+  cursor: pointer;
+  border: 5px solid #ececec;
+  box-shadow: -10px -10px 15px rgba(255, 255, 255, 0.3),
+    10px 10px 15px rgba(70, 70, 70, 0.15),
+    inset -10px -10px 15px rgba(255, 255, 255, 0.3),
+    inset 10px 10px 15px rgba(70, 70, 70, 0.15);
+  border-radius: 50%;
+}
+.theme1 {
+  background-color: #ffad00;
+}
+.theme2 {
+  background-color: #01c5c4;
+}
+.theme3 {
+  background-color: #ffa5a5;
+}
+.theme4 {
+  background-color: #d789d7;
+}
+.theme5 {
+  background-color: #f09ae9;
+}
+.theme6 {
+  background-color: #e7305b;
+}
+.theme7 {
+  background-color: #303960;
+}
+
+//   .rings {
+//     background-color: red;
+//     position: relative;
+
+//     .ring {
+//       border-radius: 300px;
+//       border: 13px solid white;
+//       position: absolute;
+//       top: 50%;
+//       left: 50%;
+//       transform: translate(-50%, -50%);
+//       box-shadow: inset 10px 10px 10px rgba($color: #000000, $alpha: 0.1),
+//         10px 10px 10px rgba($color: #000000, $alpha: 0.1),
+//         -3px -3px 10px rgba($color: #ffffff, $alpha: 0.8),
+//         inset -3px -3px 10px rgba($color: #ffffff, $alpha: 0.9);
+//       //   transition-duration: 0.5s;
+//       //   background: $color-theme;
+
+//       &1 {
+//         width: 300px - (70px * 0);
+//         height: 300px - (70px * 0);
+//         animation: backywacky5 2s ease infinite;
+//       }
+//       &2 {
+//         width: 300px - (70px * 1);
+//         height: 300px - (70px * 1);
+//         animation: backywacky4 2s ease infinite;
+//       }
+//       &3 {
+//         width: 300px - (70px * 2);
+//         height: 300px - (70px * 2);
+//         animation: backywacky3 2s ease infinite;
+//       }
+//       &4 {
+//         width: 300px - (70px * 3);
+//         height: 300px - (70px * 3);
+//         animation: backywacky2 2s ease infinite;
+//       }
+//       &5 {
+//         width: 300px - (70px * 4);
+//         height: 300px - (70px * 4);
+//         animation: backywacky1 2s ease infinite;
+//       }
+//     }
+//   }
+// }
+
+// @keyframes backywacky1 {
+//   0% {
+//     background: white;
+//   }
+//   20% {
+//     background: var(--color-theme);
+//   }
+// }
+// @keyframes backywacky2 {
+//   0% {
+//     background: white;
+//   }
+//   20% {
+//     background: white;
+//   }
+//   40% {
+//     background: var(--color-theme);
+//   }
+// }
+// @keyframes backywacky3 {
+//   0% {
+//     background: white;
+//   }
+//   40% {
+//     background: white;
+//   }
+//   60% {
+//     background: var(--color-theme);
+//   }
+// }
+// @keyframes backywacky4 {
+//   0% {
+//     background: white;
+//   }
+//   60% {
+//     background: white;
+//   }
+//   80% {
+//     background: var(--color-theme);
+//   }
+// }
+// @keyframes backywacky5 {
+//   0% {
+//     background: white;
+//   }
+//   80% {
+//     background: white;
+//   }
+//   100% {
+//     background: var(--color-theme);
+//   }
+// }
