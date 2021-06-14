@@ -347,21 +347,27 @@ h1 {
 //   }
 // }
 
-.card1337 {
+// .card1337 {
+//   width: 400px;
+//   height: 200px;
+//   margin: auto;
+//   border-radius: 20px;
+//   transform: rotate(-2deg);
+//   display: flex;
+//   background-color: #fdfefe;
+
+//   .cardimage {
+//     width: 100px;
+//     height: 100px;
+//     background-color: red;
+//     margin-top: 20px;
+//     margin-left: 20px;
+//   }
+// }
+.card {
   width: 400px;
   height: 200px;
-  margin: auto;
+  margin: 50px auto;
   border-radius: 20px;
-  transform: rotate(-2deg);
-  display: flex;
-  background-color: #fdfefe;
-
-  .cardimage {
-    width: 100px;
-    height: 100px;
-    background-color: red;
-    margin-top: 20px;
-    margin-left: 20px;
-    border-radius: 20px;
-  }
+  background-color: red;
 }

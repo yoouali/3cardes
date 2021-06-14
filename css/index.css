@@ -26,18 +26,9 @@ h1 {
     transform: rotate(-1deg) skew(1deg) scale(1);
     transition:cubic-bezier(1, 0, 0, 1);
   } */
-.card1337 {
+.card {
   width: 400px;
   height: 200px;
-  margin: auto;
+  margin: 50px auto;
   border-radius: 20px;
-  transform: rotate(-2deg);
-  display: flex;
-  background-color: #fdfefe; }
-  .card1337 .cardimage {
-    width: 100px;
-    height: 100px;
-    background-color: red;
-    margin-top: 20px;
-    margin-left: 20px;
-    border-radius: 20px; }
+  background-color: red; }
