@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/yoouali/3cardes#readme",
   "dependencies": {
+    "compass": "^0.1.1",
     "node-sass": "^6.0.0",
     "scss": "^0.2.4"
   }
